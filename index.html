@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>WeatherSphere | Real-Time Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="font-style: italic; animation:alternate-reverse; animation-play-state: running; animation-duration: 5s; animation-trigger: inherit; animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); text-decoration:solid ;"> Weather App </h1> 
-    <marquee behabiour="scroll" scrollamount=30 style="font-size: 37px; font-weight: bold;">Real Time Weather Data</marquee>
-    <form class="weatherForm" >
-     <input type="text" class="cityInput" placeholder="Enter City">
-     <button type="submit">Get Weather</button>
-    </form>
-    <div class="card" >
-         
-        </div>
-        <script src="app.js"></script>
+
+    <div class="app-container">
+        <header>
+            <h1>Weather<span>Sphere</span></h1>
+            <p class="subtitle">Get real-time updates globally</p>
+        </header>
+
+        <form class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Enter city name..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="card"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
